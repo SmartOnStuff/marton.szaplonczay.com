@@ -10,7 +10,7 @@
     "lint": "prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "start": "npm run next:start",
     "sitemap": "npm run next:sitemap",
-    "next:build": "next build",
+    "next:build": "next build && next export",
     "next:dev": "next dev",
     "next:start": "next start",
     "next:sitemap": "next-sitemap"
