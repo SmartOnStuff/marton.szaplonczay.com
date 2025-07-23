@@ -3,13 +3,17 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "build": "yarn compile && yarn next build",
+    "build": "npm run compile && npm run next:build",
     "clean": "rm -rf build-tsc .next",
-    "compile": "yarn run -T tsc --build --verbose",
-    "dev": "yarn compile && yarn next dev",
-    "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
-    "start": "yarn next start",
-    "sitemap": "yarn next-sitemap"
+    "compile": "tsc --build --verbose",
+    "dev": "npm run compile && npm run next:dev",
+    "lint": "prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
+    "start": "npm run next:start",
+    "sitemap": "npm run next:sitemap",
+    "next:build": "next build",
+    "next:dev": "next dev",
+    "next:start": "next start",
+    "next:sitemap": "next-sitemap"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.16",
@@ -58,7 +62,7 @@
     "tailwindcss": "^3.3.3",
     "typescript": "5.3.2"
   },
-  "resolutions": {
+  "overrides": {
     "autoprefixer": "10.4.5"
   }
 }
