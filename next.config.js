@@ -2,6 +2,7 @@
 
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
+  output: 'export', // Add this line to enable static export
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
@@ -24,6 +25,8 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   images: {
+    // Note: Image optimization is disabled with static export
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
