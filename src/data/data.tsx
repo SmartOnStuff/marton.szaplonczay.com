@@ -5,10 +5,9 @@ import {
   CalendarIcon,
   FlagIcon,
   MapIcon,
-  SparklesIcon,
+
   BoltIcon,
-  RocketLaunchIcon,
-  CpuChipIcon,
+
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
