@@ -125,40 +125,19 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Automation & AI Mastery',
+    name: 'Enterprise Architecture & Automation',
     skills: [
       {
-        name: 'Process Automation (RPA + Custom)',
+        name: 'Solution Architecture & TOGAF 9',
         level: 10,
       },
       {
-        name: 'AI Agent Development',
-        level: 9,
-      },
-      {
-        name: 'Blue Prism + UIPath Wizardry',
-        level: 9,
-      },
-      {
-        name: 'Python Automation Scripts',
-        level: 9,
-      },
-    ],
-  },
-  {
-    name: 'Cloud & Enterprise Architecture',
-    skills: [
-      {
-        name: 'Azure (AZ-204, AZ-303, DP-200, DP-201)',
-        level: 9,
-      },
-      {
-        name: 'Enterprise Architecture (TOGAF 9)',
-        level: 9,
-      },
-      {
-        name: 'Solution Architecture',
+        name: 'Process Automation (RPA + AI Agents)',
         level: 10,
+      },
+      {
+        name: 'Azure Cloud (AZ-204, AZ-303, DP-200/201)',
+        level: 9,
       },
       {
         name: 'Digital Transformation Strategy',
@@ -167,65 +146,44 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Web3 & DeFi (Personal Passion)',
+    name: 'Development & Data Mastery',
     skills: [
       {
-        name: 'DeFi Yield Optimization',
-        level: 8,
-      },
-      {
-        name: 'Smart Contract Integration',
-        level: 7,
-      },
-      {
-        name: 'Automated Trading Strategies',
-        level: 8,
-      },
-      {
-        name: 'Blockchain Analytics',
-        level: 7,
-      },
-    ],
-  },
-  {
-    name: 'Data & Analytics Powerhouse',
-    skills: [
-      {
-        name: 'SQL + Advanced Analytics',
+        name: 'Python (Automation, ML, Analytics)',
         level: 9,
       },
       {
-        name: 'Python (Pandas, NumPy, ML)',
-        level: 8,
+        name: 'SQL + Advanced Data Analytics',
+        level: 9,
       },
       {
-        name: 'PowerBI + Data Visualization',
-        level: 8,
+        name: 'Blue Prism + UIPath Development',
+        level: 9,
       },
       {
-        name: 'Excel/VBA Automation',
+        name: 'PowerBI & Excel/VBA Automation',
         level: 9,
       },
     ],
   },
   {
-    name: 'Leadership & Frameworks',
+    name: 'Leadership & Emerging Tech',
     skills: [
       {
         name: 'Team Leadership & Mentoring',
         level: 10,
       },
       {
-        name: 'ITIL v4 + Agile Methodologies',
-        level: 8,
-      },
-      {
         name: 'Business Process Re-engineering',
         level: 9,
       },
       {
-        name: 'Technology Evangelism',
-        level: 9,
+        name: 'DeFi Yield Optimization & Trading Bots',
+        level: 8,
+      },
+      {
+        name: 'ITIL v4 + Agile Frameworks',
+        level: 8,
       },
     ],
   },
