@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Marton Szaplonczay - Lead Architect',
+  description: "Lead Architect | Technology Strategist | Automation Enthusiast - Professional portfolio of Marton Szaplonczay",
 };
 
 /**
@@ -69,18 +69,18 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Marton Szaplonczay.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Poland-based <strong className="text-stone-100">Lead Architect & Technology Strategist</strong>, currently working
+        at <strong className="text-stone-100">ABB Business Services</strong> guiding Solutions Architects and 
+        shaping detailed strategies for complex architectures in the HR domain.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        My expertise spans <strong className="text-stone-100">IT infrastructure, Applications, Security Processes</strong> and 
+        <strong className="text-stone-100"> Business Process Automation</strong>. I'm also a proud father of three who believes in 
+        introducing <strong className="text-stone-100">best practices</strong> and working within established frameworks like TOGAF.
       </p>
     </>
   ),
@@ -104,16 +104,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `As a Lead Architect, I excel in guiding Solutions Architects and shaping detailed strategies for complex architectures. 
+  I am a customer-oriented professional with the ability to communicate effectively with stakeholders at different levels in the 
+  organization. I am skilled in making informed decisions regarding technology within my area of responsibility and have a knack 
+  for evaluating solutions objectively and making strategic recommendations.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Poland', Icon: MapIcon},
+    {label: 'Phone', text: '+48 507 358 917', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Hungarian / Polish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Technology, Architecture, Family', Icon: SparklesIcon},
+    {label: 'Study', text: 'Jagiellonian University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'ABB Business Services', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,70 +123,74 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Cloud & Architecture',
     skills: [
       {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
+        name: 'Azure (AZ-204, AZ-303, DP-200, DP-201)',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'Enterprise Architecture (TOGAF 9)',
+        level: 9,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Solution Architecture',
+        level: 10,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Automation & Tools',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Blue Prism',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'UIPath',
+        level: 8,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Ardoq (EA Tool)',
+        level: 7,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Data & Analytics',
     skills: [
       {
-        name: 'React Native',
+        name: 'SQL',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Python',
+        level: 8,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'PowerBI',
+        level: 8,
+      },
+      {
+        name: 'Excel/VBA',
+        level: 9,
+      },
+    ],
+  },
+  {
+    name: 'Frameworks & Management',
+    skills: [
+      {
+        name: 'ITIL v4',
+        level: 8,
+      },
+      {
+        name: 'Project Management',
+        level: 9,
+      },
+      {
+        name: 'Business Process Analysis',
+        level: 9,
       },
     ],
   },
@@ -196,111 +201,127 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'HR Transformation Program',
+    description: 'Providing key architectural support for ongoing HR Transformation program, including Workday implementation.',
+    url: 'https://www.abb.com',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Enterprise Architecture Framework',
+    description: 'Formulating target architecture, IT roadmap, and reference designs using TOGAF framework.',
+    url: 'https://www.abb.com',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Data & Analytics Enhancement',
+    description: 'Leading initiatives to enhance data and analytics capabilities across the organization.',
+    url: 'https://www.abb.com',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'RPA Solutions',
+    description: 'Implemented robotic process automation solutions using Blue Prism and UIPath.',
+    url: 'https://www.abb.com',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Technology Evaluation',
+    description: 'Leading architecture part of technology evaluation processes (RFI/RFP).',
+    url: 'https://www.abb.com',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Solution Architecture Projects',
+    description: 'Led 20+ projects from inception to delivery, ranging from ground-up solutions to enterprise-scale ETL.',
+    url: 'https://www.abb.com',
     image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2018 - 2020',
+    location: 'Jagiellonian University, Poland',
+    title: 'Master\'s Degree - Intellectual Property Law and New Technologies',
+    content: (
+      <p>
+        Master Thesis: "Patenting AI related inventions - The European approach". 
+        Program offered in cooperation with WIPO and Polish Patent Office, focusing on new technologies and patent law, 
+        copyright in digital era, and data protection.
+      </p>
+    ),
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2011 - 2016',
+    location: 'University of Szeged, Hungary',
+    title: 'Bachelor\'s Degree - Technical Management (Energy Specialization)',
+    content: (
+      <p>
+        Thesis: "Input Shaft Manufacturing Plan, with CNC program for a selected operation". 
+        Included ERASMUS exchanges at Uniwersytet Rolniczy (Poland, 2014-2015) and Philips College (Cyprus, 2012-2013).
+      </p>
+    ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'February 2024 - Present',
+    location: 'ABB Business Services',
+    title: 'Lead Architect for HR Domain',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Leading enterprise and technology architecture initiatives, formulating target architecture and IT roadmaps. 
+        Coordinating and training solution architects, providing architectural support for HR Transformation program 
+        including Workday implementation, and enhancing data & analytics capabilities.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'April 2021 - February 2024',
+    location: 'ABB Business Services',
+    title: 'IS Solution Architect',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Technology and Innovation Team member, excelling in precise technical solutions aligned with business needs. 
+        Led 20+ projects from inception to delivery, innovated digital solutions through collaboration with Digital Scouting team, 
+        and tackled complex technical challenges in software development and operations.
+      </p>
+    ),
+  },
+  {
+    date: 'September 2019 - April 2021',
+    location: 'ABB Business Services',
+    title: 'Chief Specialist in IT Systems Design / Lead RPA Developer',
+    content: (
+      <p>
+        Led robotic process automation initiatives and IT systems design projects, 
+        focusing on business process optimization and automation solutions.
+      </p>
+    ),
+  },
+  {
+    date: 'November 2018 - September 2019',
+    location: 'ABB Business Services',
+    title: 'Robotic Process Automation Specialist',
+    content: (
+      <p>
+        Specialized in implementing RPA solutions using industry-leading tools, 
+        automating business processes to improve efficiency and reduce manual workload.
+      </p>
+    ),
+  },
+  {
+    date: 'April 2018 - November 2018',
+    location: 'ABB Business Services',
+    title: 'Supply Chain Management Analyst/Specialist',
+    content: (
+      <p>
+        Analyzed and optimized supply chain processes, providing data-driven insights 
+        and recommendations for operational improvements.
       </p>
     ),
   },
@@ -313,18 +334,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'ABB Colleague',
+      text: 'Marton brings exceptional technical expertise and leadership to every project. His ability to translate complex technical concepts into business value is outstanding.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Solution Architect Team Member',
+      text: 'Working with Marton has been transformative. His guidance in enterprise architecture and his systematic approach to problem-solving sets him apart as a true leader.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Technology Team Lead',
+      text: 'Marton\'s expertise in automation and his strategic thinking make him an invaluable asset. His work on the HR transformation program demonstrates his ability to deliver at scale.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -333,30 +354,24 @@ export const testimonial: TestimonialSection = {
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out for collaboration opportunities, architectural consulting, or technology discussions.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'marton@szaplonczay.com',
+      href: 'mailto:marton@szaplonczay.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Poland',
+      href: 'https://www.google.com/maps/place/Poland',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
-      type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      type: ContactType.LinkedIn,
+      text: 'martonszaplonczay',
+      href: 'https://www.linkedin.com/in/martonszaplonczay/',
     },
   ],
 };
@@ -365,9 +380,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/martonszaplonczay/'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/smartonstuff'} // You may want to update this
 ];
