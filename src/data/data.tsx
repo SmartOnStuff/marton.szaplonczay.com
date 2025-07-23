@@ -69,7 +69,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Marton Szaplonczay.`,
+  name: `Hi, I'm Marton Szaplonczay`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -128,12 +128,12 @@ export const skills: SkillGroup[] = [
     name: 'Enterprise Architecture & Automation',
     skills: [
       {
-        name: 'Solution Architecture & TOGAF 9',
+        name: 'Enterprise and Solution Architecture & TOGAF 9',
         level: 10,
       },
       {
         name: 'Process Automation (RPA + AI Agents)',
-        level: 10,
+        level: 9,
       },
       {
         name: 'Azure Cloud (AZ-204, AZ-303, DP-200/201)',
@@ -161,9 +161,9 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'PowerBI & Excel/VBA Automation',
-        level: 9,
-      },
+        name: 'Frontend - React (I made this website... well forked it)',
+        level: 6,
+      }
     ],
   },
   {
@@ -194,14 +194,14 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'HR Transformation Automation Engine',
-    description: 'Architecting the automation backbone for ABB\'s massive HR transformation, including intelligent Workday integration with self-healing processes.',
+    title: 'HR Transformation Program',
+    description: 'Architecting the backbone of ABB\'s massive HR transformation, including intelligent Workday integration.',
     url: 'https://www.abb.com',
     image: porfolioImage1,
   },
   {
-    title: 'Enterprise Automation Framework',
-    description: 'Built a TOGAF-compliant enterprise architecture framework with automated governance, self-documenting APIs, and intelligent monitoring.',
+    title: 'Domain Application and Integration Landscape',
+    description: 'Built the compete Application and Integration Landscape for my domain and made sure its maintained.',
     url: 'https://www.abb.com',
     image: porfolioImage2,
   },
@@ -213,7 +213,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Hyper-Intelligent RPA Ecosystem',
-    description: 'Created next-gen RPA solutions using Blue Prism + UIPath with ML integration, capable of learning and adapting to process changes autonomously.',
+    description: 'Created next-gen RPA solutions using Blue Prism with ML integration, capable of learning and adapting to process changes autonomously.',
     url: 'https://www.abb.com',
     image: porfolioImage4,
   },
@@ -225,8 +225,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Personal DeFi Yield Optimizer',
-    description: 'Built a personal AI agent that monitors 50+ DeFi protocols, automatically rebalances portfolios, and executes optimal yield farming strategies.',
-    url: '#',
+    description: 'Built a personal AI agent that monitors DeFi protocols, automatically rebalances portfolios, and executes optimal trading and yield farming strategies.',
+    url: 'github.com/smartonstuff/lazaitrader',
     image: porfolioImage6,
   },
 ];
@@ -268,7 +268,7 @@ export const experience: TimelineItem[] = [
     title: '🚀 Lead Architect for HR Domain',
     content: (
       <p>
-        Leading the automation revolution in enterprise architecture! I'm orchestrating target architecture strategies, 
+        Leading the HR revolution in enterprise architecture! I'm orchestrating target architecture strategies, 
         mentoring solution architects in the art of automation-first thinking, and spearheading the HR Transformation program 
         with intelligent Workday integration. My mission: turn every manual process into an automated masterpiece while 
         enhancing data & analytics capabilities with AI-driven insights. <strong>Current focus:</strong> Building self-optimizing 
@@ -283,8 +283,8 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Technology and Innovation Team power player, where I perfected the art of translating "impossible" business requirements 
-        into elegant automated solutions. Led 20+ end-to-end projects, each one more automated than the last. Collaborated with 
-        Digital Scouting team to identify and implement bleeding-edge automation technologies. My secret sauce: 
+        into elegant solutions. Led 20+ end-to-end projects, each one more automated than the last. Took active part in the 
+        Digital Scouting team to identify and implement bleeding-edge technologies. My secret sauce: 
         <em>Every solution I design includes at least 3 layers of automation and self-healing capabilities.</em>
       </p>
     ),
@@ -298,7 +298,7 @@ export const experience: TimelineItem[] = [
         This is where my automation obsession truly took flight! Led robotic process automation initiatives that didn't just 
         replace manual work — they created intelligent, learning systems. Designed IT systems with automation-first principles, 
         focusing on business process optimization that scales exponentially. <strong>Achievement unlocked:</strong> 
-        Built RPA solutions that trained themselves to handle edge cases.
+        Built RPA solutions that actually worked and brought visible business value.
       </p>
     ),
   },
@@ -337,7 +337,7 @@ export const testimonial: TestimonialSection = {
     {
       name: 'ABB Senior Leadership',
       text: 'Marton doesn\'t just solve problems — he creates systems that prevent problems from existing in the first place. His automation-first approach to enterprise architecture has transformed how we think about scalability.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      image: 'https://media.istockphoto.com/id/831902128/photo/i-can-tell-this-day-is-going-to-be-great.jpg?s=1024x1024&w=is&k=20&c=XNyaoBHw2qZCI7TozWWd7UhVHKL3B7LTg2hN-AIX46E=',
     },
     {
       name: 'Solution Architect Team Member',
@@ -345,8 +345,8 @@ export const testimonial: TestimonialSection = {
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Technology Innovation Lead',
-      text: 'Marton\'s superpower is making the complex feel simple and the impossible feel inevitable. His work on the HR transformation program proves that enterprise-scale automation isn\'t just possible — it\'s the future.',
+      name: 'Technology Service Owner - ABB',
+      text: 'Marton\'s superpower is making the complex feel simple and the impossible feel inevitable. His work on the HR transformation program proves that enterprise-scale integrations isn\'t just possible — it\'s the future.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
